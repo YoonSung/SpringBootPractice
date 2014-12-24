@@ -1,0 +1,7 @@
+1. Installing Spring Boot
+	Spring Boot CLI by home brew
+	$ brew tap pivotal/tap
+	$ brew install springboot
+2. Quick start Spring CLI example
+	Create a file called app.groovy
+	Then simply run it from a shell: $ spring run app.groovy
