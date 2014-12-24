@@ -1,0 +1,7 @@
+1. Creating the POM
+	The pom.xml is the recipe that will be used to build your project
+	Spring Boot provides a number of “Starter POMs” that make easy to add jars to your classpath
+	mvn dependency:tree command prints a tree representation of your project dependencies
+	
+	add the spring-boot-starter-web
+	including the Tomcat web server and Spring Boot itself.
