@@ -2,6 +2,21 @@
 	The pom.xml is the recipe that will be used to build your project
 	Spring Boot provides a number of “Starter POMs” that make easy to add jars to your classpath
 	mvn dependency:tree command prints a tree representation of your project dependencies
-	
+
+2. Add Web Starter POMs	
 	add the spring-boot-starter-web
 	including the Tomcat web server and Spring Boot itself.
+
+3. Writing the code
+	create src/main/java/Example.java - directory is based by maven
+	@RestController
+		@Controller + @ResponseBody in Spring Annotation Syntax
+
+	@EnableAutoConfiguration
+		Spring Boot to “guess” how you will want to configure Spring, based on the jar dependencies that you have added. 
+		Since spring-boot-starter-web added Tomcat and Spring MVC, the auto-configuration will assume that you are developing a web application and setup Spring accordingly.
+
+	The “main” method
+		This is just a standard method that follows the Java convention for an application entry point
+		delegates to Spring Boot’s SpringApplication class by calling run. 
+		SpringApplication will bootstrap our application, starting Spring which will in turn start the auto-configured Tomcat web server
