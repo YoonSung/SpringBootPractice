@@ -20,3 +20,7 @@
 		This is just a standard method that follows the Java convention for an application entry point
 		delegates to Spring Boot’s SpringApplication class by calling run. 
 		SpringApplication will bootstrap our application, starting Spring which will in turn start the auto-configured Tomcat web server
+
+4. Running the example
+	Since we have used the spring-boot-starter-parent POM we have a useful run goal that we can use to start the application. 
+	Type mvn spring-boot:run from the root project directory to start the application
